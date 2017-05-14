@@ -1,0 +1,17 @@
+.container{
+  width: 1000px;
+  background-color: red;
+  min-height: 1px;
+  height: 100%;
+  margin: auto;
+  text-align: center;
+    font-family: 'Open Sans', sans-serif;
+  h1{
+   text-align: center;
+    color: white;
+  }
+  .input_search{
+    margin: auto;
+    padding-left: 1px;
+  }
+}

@@ -12,3 +12,9 @@
   .container .input_search {
     margin: auto;
     padding-left: 1px; }
+  .container h5 {
+    display: none; }
+  .container h4 {
+    display: none; }
+  .container h3 {
+    display: none; }

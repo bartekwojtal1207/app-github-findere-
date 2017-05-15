@@ -14,21 +14,18 @@
   .container .search_content {
     background-color: #1abc9c; }
   .container .input_search {
-    margin: auto;
     padding-left: 1px;
     display: inline-block;
     -webkit-box-sizing: content-box;
     -moz-box-sizing: content-box;
     box-sizing: content-box;
-    float: none;
+    float: left;
     z-index: auto;
-    width: auto;
+    width: 500px;
     height: auto;
     position: static;
-    cursor: default;
-    opacity: 1;
-    margin: 0;
-    padding: 10px 200px 10px 20px;
+    margin-left: 20px;
+    padding: 10px 20px 10px 20px;
     overflow: visible;
     border: 0px;
     -webkit-border-radius: 3px;
@@ -59,6 +56,8 @@
     border: 0px; }
     .container input[name="search"]:hover {
       cursor: pointer; }
+  .container .waring_title {
+    display: none; }
   .container .no_result_title {
     display: none;
     font-size: 40px; }
@@ -66,7 +65,8 @@
 .list {
   list-style: none;
   background-color: #2a78f7;
-  color: white; }
+  color: white;
+  padding-left: 20px; }
   .list li {
     border-bottom: 1px solid #00368e; }
     .list li:hover {
@@ -75,11 +75,14 @@
     .list li a {
       text-decoration: none;
       color: white; }
-  .list .avatar {
-    width: 70px;
-    height: 70px;
-    float: left;
-    margin-top: 10px; }
+  .list .big_link {
+    text-align: left; }
+    .list .big_link .avatar {
+      width: 70px;
+      height: 70px;
+      float: left;
+      margin-top: 10px;
+      margin-right: 20px; }
   .list .name_repo_title {
     display: inline-block;
     margin-bottom: 0px; }

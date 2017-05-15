@@ -21,6 +21,7 @@ $(document).ready(function(){
         if (counter <4 ) {// if symbol < 4
           $(".list").children().remove();
           $(".waring_title").fadeIn(1000);// show message
+          $(".no_result_title").fadeOut(200);
         }else{// if not
           $(".warnig_title").fadeOut(200);
           serch_repo(repo_item); // run function search
@@ -31,11 +32,7 @@ $(document).ready(function(){
       });
   });// end of function with keyup
 
-
-
 //function with valid to input search
-
-
   function serch_repo(repo_item,counter){
     if(typeof repo_item == "undefined") { // if repo undefined
       $(".waring_title").css("display","none");
@@ -55,19 +52,13 @@ $(document).ready(function(){
             var new_li = $("<li>");
             var new_link = $("<a href="+repo_item[i].owner.html_url+"/>");
             var container_result_li = $("<div class='big_link'>");
-          console.log(repo_item[i]);
+
            $(".list").append(new_li);
             $(new_li).append(new_link);
             $(new_link).append(container_result_li);
-              $(container_result_li).append(new_img);
-              $(container_result_li).append(rep_name);
-              $(container_result_li).append(rep_full_name);
-          //  $(new_link).append(rep_name);
-            //$(new_link).append(rep_full_name);
-            // $(new_li).append(new_img);
-            // $(new_li).append(rep_name);
-            // $(new_li).append(rep_full_name);
-
+            $(container_result_li).append(new_img);
+            $(container_result_li).append(rep_name);
+            $(container_result_li).append(rep_full_name);
           }/// end pf loop
       }// end of else
   };// end of function

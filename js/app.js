@@ -59,10 +59,17 @@ $(document).ready(function(){
         $("h4").css("display","block");
         $("h5").css("display","none");
           for (var i = 0; i < repo_item.length; i++) {
-            console.log(repo_item[i]);
-            var new_li = $("<li>"+repo_item[i].name+"</li>");
-            console.log(new_li);
+            console.log( repo_item[i].owner.avatar_url);
+
+            var rep_name = $("<h6>"+repo_item[i].name+"</h6>");
+            var rep_full_name = $("<p>"+repo_item[i].full_name+"</p>");
+           var new_img = $("<img class='avatar' src="+repo_item[i].owner.avatar_url+"/>");
+           console.log(new_img);
+            var new_li = $("<li>");
+      //      console.log(new_li);
             $(".list").append(new_li);
+            $(new_li).append(new_img);
+            $(new_li).append(rep_full_name);
           }/// end pf loop
       }// end of else
   };// end of function

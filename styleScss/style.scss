@@ -32,7 +32,7 @@
   margin: 0;
   padding: 10px 200px 10px 20px;
   overflow: visible;
-  border: 1px solid #b7b7b7;
+  border: 0px;
   -webkit-border-radius: 3px;
   border-radius: 3px;
   font: normal normal bold;
@@ -51,8 +51,48 @@
     transform: none;
     -webkit-transform-origin: 50% 50% 0;
     transform-origin: 50% 50% 0;
+    font-weight: bold;
   }
-  h5{display: none;}
-  h4{display: none;}
-  h3{display: none;}
+  input[name="search"]{
+    background: url("https://maxcdn.icons8.com/iOS7/PNG/25/Very_Basic/search_filled-25.png");
+    //background: url(https://maxcdn.icons8.com/iOS7/PNG/25/Very_Basic/search_filled-25.png);
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 25px;
+    background-position: center;
+    border: 0px;
+    &:hover{
+      cursor: pointer;
+    }
+  }
+  .no_result_title{
+    display: none;
+    font-size: 40px;
+  }
+}
+.list{
+  list-style: none;
+  background-color: #2a78f7;
+  color: white;
+  li{
+    border-bottom: 1px solid #00368e;
+    &:hover{
+      opacity: .5;
+      cursor: pointer;
+    }
+    a{
+      text-decoration: none;
+      color: white;
+    }
+  }
+  .avatar{
+    width: 70px;
+    height: 70px;
+    float: left;
+    margin-top: 10px;
+  }
+  .name_repo_title{
+    display: inline-block;
+    margin-bottom: 0px;
+  }
 }

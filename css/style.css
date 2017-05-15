@@ -30,7 +30,7 @@
     margin: 0;
     padding: 10px 200px 10px 20px;
     overflow: visible;
-    border: 1px solid #b7b7b7;
+    border: 0px;
     -webkit-border-radius: 3px;
     border-radius: 3px;
     font: normal normal bold;
@@ -48,10 +48,38 @@
     -webkit-transform: none;
     transform: none;
     -webkit-transform-origin: 50% 50% 0;
-    transform-origin: 50% 50% 0; }
-  .container h5 {
-    display: none; }
-  .container h4 {
-    display: none; }
-  .container h3 {
-    display: none; }
+    transform-origin: 50% 50% 0;
+    font-weight: bold; }
+  .container input[name="search"] {
+    background: url("https://maxcdn.icons8.com/iOS7/PNG/25/Very_Basic/search_filled-25.png");
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 25px;
+    background-position: center;
+    border: 0px; }
+    .container input[name="search"]:hover {
+      cursor: pointer; }
+  .container .no_result_title {
+    display: none;
+    font-size: 40px; }
+
+.list {
+  list-style: none;
+  background-color: #2a78f7;
+  color: white; }
+  .list li {
+    border-bottom: 1px solid #00368e; }
+    .list li:hover {
+      opacity: .5;
+      cursor: pointer; }
+    .list li a {
+      text-decoration: none;
+      color: white; }
+  .list .avatar {
+    width: 70px;
+    height: 70px;
+    float: left;
+    margin-top: 10px; }
+  .list .name_repo_title {
+    display: inline-block;
+    margin-bottom: 0px; }
